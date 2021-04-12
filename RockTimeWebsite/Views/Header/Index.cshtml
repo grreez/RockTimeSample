@@ -1,0 +1,38 @@
+﻿@model List<Article>
+<header id="mainHeader" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/home" class="navbar-brand">
+                <h1 class="strip-pm em11">rocktime</h1>
+                <p class="strip-pm em7">The Company That Rocks</p>
+            </a>
+        </div>
+        <nav>
+            <ul class="nav navbar-nav">
+                @foreach (var item in Model)
+                {
+                    string currentPage = ViewBag.SelectedPage;
+                    <li class="@(currentPage == item.ArticleTitle.ToUrl() ? "active" : "inact") dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="/@item.ArticleTitle.ToUrl()"
+                           title="@item.ArticleTitle" role="button" aria-haspopup="true">
+                            @item.ArticleTitle
+                        </a>
+                        @if (item.Articles.Count() > 0)
+                        {
+                            <ul class="dropdown-menu">
+                                @foreach (var art in item.Articles)
+                                {
+                                    <li>
+                                        <a href="/@art.ArticleTitle.ToUrl()" title="/@art.ArticleTitle">@art.ArticleTitle</a>
+                                    </li>
+                                }
+                            </ul>
+                        }
+                        </li>
+                }
+                <li><a href="/about-us" title="About The Company">About Us</a></li>
+                <li><a href="/contact-us" title="Conatct Rocktime">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

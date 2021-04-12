@@ -1,0 +1,49 @@
+﻿#rocktime-main{
+    margin-top:100px;
+}
+#pageFooter {
+    background-color: #222 !important;
+    padding:20px 0px;
+    margin-top:50px;
+    
+}
+#pageFooter > * {
+    color: #ccc !important;
+}
+#pageFooter a, #pageFooter a:link{
+    color:#ccc;
+    text-decoration:none;
+}
+.strip-pm {
+    padding:0px;
+    margin:0px;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: #222 !important;
+}
+.form-control {
+    width: 98% !important;
+}
+.em10 {
+    font-size: 1em;
+}
+.em11 {
+    font-size: 1.1em;
+}
+.em12 {
+    font-size: 1.2em;
+}
+.em13 {
+    font-size: 1.3em;
+}
+.em9 {
+    font-size: .9em;
+}
+.em8 {
+    font-size: .8em;
+}
+.em7 {
+    font-size: .7em;
+}

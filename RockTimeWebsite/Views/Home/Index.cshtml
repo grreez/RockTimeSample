@@ -1,0 +1,51 @@
+﻿@model ArticleViewModel
+
+@{
+    var page = Model.Article;
+    var articles = page.Articles;
+}
+
+@{
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+<main id="rocktime-main">
+    <div class="container-fluid col-lg-10 col-lg-offset-1">
+        <header id="mainHeader" class="page-header">
+            <h2 class="em13">@page.ArticleHeader</h2>
+        </header>
+        <section>
+            <h3 class="em12">List Of Current Articles</h3>
+            @if (ViewBag.MessageType != null)
+            {
+                <p class="alert @( ViewBag.MessageType == 1 ? "alert-success" : "alert-danger")">@ViewBag.EditorMessage</p>
+            }
+            @foreach (var article in articles)
+            {
+                <article class="panel panel-default">
+                    <h3 class="panel-heading em10">
+                        <span>@article.ArticleTitle</span>
+                    </h3>
+                    <p class="panel-body em8">
+                        @article.ArticleContent.Substring(0, @article.ArticleContent.Length/3)...
+                    </p>
+                    <footer class="panel-footer">
+                        <div class="text-right">
+                            <a href="/home/article?pageId=@article.ArticleId" title="@article.ArticleTitle" class="iframe cboxElement btn btn-danger btn-sm em7">View Article</a>
+                            <button class="btn btn-danger btn-sm em7" type="button" onclick="$.colorbox({href:'@Url.Action("Edit", "Article",
+                            new { articleId = 0 , parentArticleId = @page.ArticleId })', transition: 'elastic',  overlayClose: true, width: '80%', height: '70%'});">Add New Article</button>
+                        </div>
+                    </footer>
+                </article>
+            }
+        </section>
+    </div>
+</main>
+@section scripts {
+<script src="~/Scripts/jquery-1.9.1.min.js"></script>
+<script src="~/Scripts/jquery.colorbox-min.js"></script>
+<script src="~/Scripts/bootstrap.min.js"></script>
+<script>
+    jQuery('a.iframe').colorbox({ width: '70%', 'height': '50%', title: false, transition: 'elastic', overlayClose: true });
+</script>
+}
+

@@ -1,0 +1,28 @@
+﻿@model Article
+<article class="panel panel-default">
+    <h2 class="panel-heading em10">
+        <span>@Model.ArticleTitle</span>
+    </h2>
+    <p class="panel-body em8">
+        @Model.ArticleContent
+    </p>
+    <footer class="panel-footer">
+        <div class="text-right">
+
+            <button class="btn btn-danger btn-sm em7" type="button" onclick="$.colorbox({href:'@Url.Action("Edit", "Article",
+            new { articleId = @Model.ArticleId , parentArticleId = @Model.ParentArticleId })', transition: 'elastic',  overlayClose: true, width: '80%', height: '70%'});">Edit</button>
+            
+            @Html.RouteLink("Delete Article",
+            new {
+            controller = "Article",
+            action = "Delete",
+            articleId = Model.ArticleId
+            },
+            new
+            {
+                @class = "btn btn-danger btn-sm em7"
+            })
+
+        </div>
+    </footer>
+</article>

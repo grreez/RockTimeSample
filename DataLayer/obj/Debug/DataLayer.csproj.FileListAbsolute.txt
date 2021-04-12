@@ -1,0 +1,14 @@
+c:\users\zaranek\documents\visual studio 2013\Projects\RockTimeWebsite\DataLayer\bin\Debug\DataLayer.dll
+c:\users\zaranek\documents\visual studio 2013\Projects\RockTimeWebsite\DataLayer\bin\Debug\DataLayer.pdb
+c:\users\zaranek\documents\visual studio 2013\Projects\RockTimeWebsite\DataLayer\obj\Debug\DataLayer.csprojResolveAssemblyReference.cache
+c:\users\zaranek\documents\visual studio 2013\Projects\RockTimeWebsite\DataLayer\obj\Debug\DataLayer.dll
+c:\users\zaranek\documents\visual studio 2013\Projects\RockTimeWebsite\DataLayer\obj\Debug\DataLayer.pdb
+C:\Users\Zaranek\documents\visual studio 2013\Projects\RockTimeWebsite\DataLayer\bin\Debug\DataLayer.dll.config
+C:\Users\Zaranek\documents\visual studio 2013\Projects\RockTimeWebsite\DataLayer\bin\Debug\Domain.dll
+C:\Users\Zaranek\documents\visual studio 2013\Projects\RockTimeWebsite\DataLayer\bin\Debug\Domain.pdb
+C:\Users\Zaranek\documents\visual studio 2013\Projects\RockTimeWebsite\DataLayer\bin\Debug\EntityFramework.dll
+C:\Users\Zaranek\documents\visual studio 2013\Projects\RockTimeWebsite\DataLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Zaranek\documents\visual studio 2013\Projects\RockTimeWebsite\DataLayer\bin\Debug\EntityFramework.xml
+C:\Users\Zaranek\documents\visual studio 2013\Projects\RockTimeWebsite\DataLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Zaranek\Documents\Visual Studio 2013\Projects\RockTimeWebsite\DataLayer\obj\Debug\DataLayer.Migrations.init.resources
+C:\Users\Zaranek\Documents\Visual Studio 2013\Projects\RockTimeWebsite\DataLayer\obj\Debug\DataLayer.csproj.GenerateResource.Cache

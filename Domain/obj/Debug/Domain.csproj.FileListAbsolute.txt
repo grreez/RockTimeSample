@@ -1,0 +1,5 @@
+c:\users\zaranek\documents\visual studio 2013\Projects\RockTimeWebsite\Domain\obj\Debug\Domain.csprojResolveAssemblyReference.cache
+c:\users\zaranek\documents\visual studio 2013\Projects\RockTimeWebsite\Domain\bin\Debug\Domain.dll
+c:\users\zaranek\documents\visual studio 2013\Projects\RockTimeWebsite\Domain\bin\Debug\Domain.pdb
+c:\users\zaranek\documents\visual studio 2013\Projects\RockTimeWebsite\Domain\obj\Debug\Domain.dll
+c:\users\zaranek\documents\visual studio 2013\Projects\RockTimeWebsite\Domain\obj\Debug\Domain.pdb
